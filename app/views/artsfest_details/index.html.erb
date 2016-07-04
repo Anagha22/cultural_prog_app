@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Artsfest Details</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name </th>
+      <th>House </th>
+      <th>Roll no </th>
+      <th>Prize </th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @artsfest_details.each do |artsfest_detail| %>
+      <tr>
+        <td><%= artsfest_detail.name_ %></td>
+        <td><%= artsfest_detail.house_ %></td>
+        <td><%= artsfest_detail.roll_no_ %></td>
+        <td><%= artsfest_detail.prize_ %></td>
+        <td><%= link_to 'Show', artsfest_detail %></td>
+        <td><%= link_to 'Edit', edit_artsfest_detail_path(artsfest_detail) %></td>
+        <td><%= link_to 'Destroy', artsfest_detail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Artsfest detail', new_artsfest_detail_path %>

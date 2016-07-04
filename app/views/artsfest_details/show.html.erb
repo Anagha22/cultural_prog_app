@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name :</strong>
+  <%= @artsfest_detail.name_ %>
+</p>
+
+<p>
+  <strong>House :</strong>
+  <%= @artsfest_detail.house_ %>
+</p>
+
+<p>
+  <strong>Roll no :</strong>
+  <%= @artsfest_detail.roll_no_ %>
+</p>
+
+<p>
+  <strong>Prize :</strong>
+  <%= @artsfest_detail.prize_ %>
+</p>
+
+<%= link_to 'Edit', edit_artsfest_detail_path(@artsfest_detail) %> |
+<%= link_to 'Back', artsfest_details_path %>

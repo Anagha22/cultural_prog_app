@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name_: MyString
+  house_: MyString
+  roll_no_: MyString
+  prize_: MyText
+
+two:
+  name_: MyString
+  house_: MyString
+  roll_no_: MyString
+  prize_: MyText
